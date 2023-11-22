@@ -6,7 +6,6 @@ module.exports = {
   optimization: {
     minimize: false
   },
-  target: 'es2020',
   experiments: {
     outputModule: true,
   },
