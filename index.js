@@ -1,4 +1,5 @@
-import "core-js";
+// import "core-js";
+import "core-js/stable/url/index.js";
 import { ApiPromise } from '@polkadot/api';
 
 const main = async () => {
