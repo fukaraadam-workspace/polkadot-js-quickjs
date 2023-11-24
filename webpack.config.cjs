@@ -7,27 +7,26 @@ module.exports = {
     minimize: false
   },
   devtool: 'source-map',
-  target: ['es2020'],
-  experiments: {
-    outputModule: true,
-  },
+  // target: ['es2020'],
+  // experiments: {
+  //   outputModule: true,
+  // },
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'out'),
     // chunkFormat: 'commonjs', // or 'array-push'
     // libraryTarget: 'module'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|mjs)$/,
+        // exclude: /node_modules/,
+        use: ['babel-loader']
+      }
+    ]
+  },
   resolve: {
-  //   alias: {
-  //     '@polkadot/x-fetch': require.resolve('cross-fetch'),
-  //   },
-    // conditionNames: ["import", "require", "default"],
-    conditionNames: ['import', 'browser', 'module', 'main'],
-    fallback: {
-      "buffer": require.resolve("buffer"),
-  //     "util": require.resolve("util/"),
-  //     "process": require.resolve("process/browser"),
-  //     "stream": require.resolve("stream-browserify"),
-    }
+    extensions: ['*', '.js', '.mjs']
   },
 };
