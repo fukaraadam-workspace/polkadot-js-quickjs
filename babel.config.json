@@ -4,6 +4,8 @@
       "@babel/preset-env",
       {
         "debug": true,
+        "useBuiltIns": "entry",
+        "corejs": 3.33,
         "targets": "ie 11"
       }
     ]

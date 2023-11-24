@@ -10,7 +10,7 @@
   "type": "module",
   "dependencies": {
     "@polkadot/api": "^10.11.1",
-    "buffer": "^6.0.3"
+    "core-js": "^3.33.3"
   },
   "devDependencies": {
     "@babel/core": "^7.23.3",
