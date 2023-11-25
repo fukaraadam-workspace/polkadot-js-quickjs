@@ -1,7 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  entry: './index.js',
+  entry: {
+    index: './src/index.js',
+    problem: './src/problem.js'
+  },
   mode: 'production',
   optimization: {
     minimize: false
@@ -12,7 +15,7 @@ module.exports = {
   //   outputModule: true,
   // },
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'out'),
     // chunkFormat: 'commonjs', // or 'array-push'
     // libraryTarget: 'module'
