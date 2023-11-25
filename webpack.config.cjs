@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
   entry: {
     index: './src/index.js',
-    problem: './src/problem.js'
+    problem: './src/problem.js',
+    polProblem: './src/wasm-util-problem/pol-problem.js'
   },
   mode: 'production',
   optimization: {
