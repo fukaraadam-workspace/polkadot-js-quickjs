@@ -1260,10 +1260,10 @@
     "@polkadot/wasm-util" "7.3.1"
     tslib "^2.6.2"
 
-"@polkadot/wasm-util@7.3.1", "@polkadot/wasm-util@^7.3.1":
-  version "7.3.1"
-  resolved "https://registry.yarnpkg.com/@polkadot/wasm-util/-/wasm-util-7.3.1.tgz#047fbce91e9bdd944d46bea8f636d2fdc268fba2"
-  integrity sha512-0m6ozYwBrJgnGl6QvS37ZiGRu4FFPPEtMYEVssfo1Tz4skHJlByWaHWhRNoNCVFAKiGEBu+rfx5HAQMAhoPkvg==
+"@polkadot/wasm-util@7.3.1", "@polkadot/wasm-util@^7.3.1", "@polkadot/wasm-util@npm:@fukaraadam-workspace/polkadot-js-wasm-util":
+  version "7.3.2-0-x"
+  resolved "https://registry.yarnpkg.com/@fukaraadam-workspace/polkadot-js-wasm-util/-/polkadot-js-wasm-util-7.3.2-0-x.tgz#e00886adef3f99702fe3bf3375551cae9be7ba9e"
+  integrity sha512-MZypDIbAy4AkUSfRMlWvicbsa2YRntGuMrQM28RSKA2DQ1P5T+gqDg0+3jHCMvCjl9YDmQiFcrlsXe27NPohRA==
   dependencies:
     tslib "^2.6.2"
 
@@ -1642,9 +1642,9 @@ buffer-from@^1.0.0:
   integrity sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==
 
 caniuse-lite@^1.0.30001541:
-  version "1.0.30001564"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001564.tgz#eaa8bbc58c0cbccdcb7b41186df39dd2ba591889"
-  integrity sha512-DqAOf+rhof+6GVx1y+xzbFPeOumfQnhYzVnZD6LAXijR77yPtm9mfOcqOnT3mpnJiZVT+kwLAFnRlZcIz+c6bg==
+  version "1.0.30001565"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001565.tgz#a528b253c8a2d95d2b415e11d8b9942acc100c4f"
+  integrity sha512-xrE//a3O7TP0vaJ8ikzkD2c2NgcVUvsEe2IvFTntV4Yd1Z9FVzh+gW+enX96L0psrbaFMcVcH2l90xNuGDWc8w==
 
 chalk@^2.4.2:
   version "2.4.2"
