@@ -1,7 +1,7 @@
 # Polkadot.js wrapper for QuickJS engine
 
 > **Warning:** This is a work in progress.
-
+>
 > **Warning 2:** WebSocket is needed in @polkadot/api, but QuickJS doesn't provide one. Either use custom QuickJS with websocket or provide a WebSocket object from entegration.
 
 This is aimed to be wrapper for the [@polkadot/api](https://github.com/polkadot-js/api) npm package, which allows you to use it in the [QuickJS](https://bellard.org/quickjs/) engine. Ultimately, this was planned to be used in [Godot-JS](https://github.com/Geequlim/ECMAScript)

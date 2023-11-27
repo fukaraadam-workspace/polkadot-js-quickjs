@@ -1,23 +1,17 @@
-const path = require('path');
+const path = require("path");
 
-module.exports = {
+let config = {
   entry: {
-    index: './src/index.js',
-    problem: './src/problem.js',
-    polProblem: './src/wasm-util-problem/pol-problem.js'
+    index: "./src/index.js",
+    problem: "./src/problem.js",
   },
-  mode: 'production',
-  optimization: {
-    minimize: false
-  },
-  devtool: 'source-map',
   // target: ['es2020'],
   // experiments: {
   //   outputModule: true,
   // },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'out'),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "out"),
     // chunkFormat: 'commonjs', // or 'array-push'
     // libraryTarget: 'module'
   },
@@ -26,11 +20,24 @@ module.exports = {
       {
         test: /\.(js|mjs)$/,
         // exclude: /node_modules/,
-        use: ['babel-loader']
-      }
-    ]
+        use: ["babel-loader"],
+      },
+    ],
   },
   resolve: {
-    extensions: ['*', '.js', '.mjs']
+    extensions: ["*", ".js", ".mjs"],
   },
+};
+
+module.exports = (env) => {
+  if (env.mode === "development") {
+    config.mode = "development";
+    config.devtool = "source-map";
+    config.optimization = { minimize: false };
+  } else {
+    config.mode = "production";
+    config.devtool = false;
+    config.optimization = { minimize: true };
+  }
+  return config;
 };
