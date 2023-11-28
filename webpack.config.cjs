@@ -3,7 +3,6 @@ const path = require("path");
 let config = {
   entry: {
     index: "./src/index.js",
-    problem: "./src/problem.js",
   },
   // target: ['es2020'],
   // experiments: {

@@ -4,7 +4,7 @@ const isProduction = process.argv.length > 2 && process.argv[2] == '--release';
 console.log("isProduction: ", isProduction);
 
 const options = {
-	entryPoints: ['./src/index.js', './src/problem.js'],
+	entryPoints: ['./src/index.js'],
 	format: 'esm',
 	bundle: true,
 	splitting: true,

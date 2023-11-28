@@ -1,3 +1,5 @@
+"use strict";
+// For test problem to throw error, either but it in mjs or use strict
 const out = new Uint8Array(2);
 console.log("out type: ", typeof out);
 out[0]= 10;
